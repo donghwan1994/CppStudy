@@ -12,6 +12,7 @@ int main()
 	cout << add(1, 2) << endl;
 	cout << multiply(3, 4) << endl;
 	cout << subtract(2, 1) << endl;;
+	cout << subtract(2, 1) << endl;
 
 	return 0;
 }

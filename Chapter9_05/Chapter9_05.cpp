@@ -17,6 +17,13 @@ public:
 		return *this;
 	}
 
+	Digit & operator --()
+	{
+		--m_digit;
+
+		return *this;
+	}
+
 	//postfix
 	Digit operator ++(int)
 	{

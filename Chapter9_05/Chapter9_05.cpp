@@ -33,6 +33,14 @@ public:
 		return temp.m_digit;
 	}
 
+	Digit operator --(int)
+	{
+		Digit temp(m_digit);
+		--*(this);
+
+		return temp.m_digit;
+	}
+
 	friend ostream & operator << (ostream &out, const Digit &d)
 	{
 		cout << d.m_digit;
@@ -46,5 +54,9 @@ int main()
 
 	cout << ++d << endl;
 	cout << d++ << endl;
+	cout << d << endl;
+
+	cout << --d << endl;
+	cout << d-- << endl;
 	cout << d << endl;
 }
